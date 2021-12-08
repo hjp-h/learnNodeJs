@@ -1,0 +1,2 @@
+一般commonJs导出的，esmodule都可以导入
+但是esmodule导出的，一般是不能用commmonJs导入的（esmodule是异步的）

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>客户端设置cookie</title>
+</head>
+<body>
+  <button id="btn" type="button">添加cookie</button>
+
+  <script type="text/javascript">
+    const btn = document.getElementById("btn")
+    btn.addEventListener("click",() => {
+      // max-age为过期的时间
+      document.cookie = "name=hjp;max-age= 10"
+    })
+  </script>
+</body>
+
+</html>

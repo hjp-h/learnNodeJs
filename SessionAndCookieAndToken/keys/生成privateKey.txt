@@ -1,0 +1,6 @@
+秘钥：
+在命令行 输入 openssl
+输入 genrsa -out private.key 1024(长度)
+
+公钥：
+ rsa -in private.key -pubout -out public.key

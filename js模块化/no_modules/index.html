@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>没有JS模块化的规范</title>
+</head>
+<body>
+  <script src="./a.js"></script>
+  <script src="./b.js"></script>
+  <script>
+    //不做任何的处理，那么b将覆盖与a中相同的变量
+    console.log(name)
+    console.log(moduleA.name)
+  </script>
+</body>
+</html>
