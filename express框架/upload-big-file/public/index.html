@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大文件上传-断点续传</title>
+</head>
+<body>
+  <h1>大文件上传-断点续传</h1>
+  <p>应用场景：文件比较大，服务器一次性只能接受固定大小的文件，网络断开-恢复后可重新上传</p>
+  <p>思路：（1）将文件切分成小份，依次上传 （2）服务器一次写入，并记录上传进度</p>
+  <progress id="progress" value="0"></progress>
+  <input type="file" id="uploader"/>
+  <br/>
+  <p id="info">请选择文件并上传</p>
+  <script src="https://unpkg.com/crypto-js@4.1.1/crypto-js.js"></script>
+  <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
