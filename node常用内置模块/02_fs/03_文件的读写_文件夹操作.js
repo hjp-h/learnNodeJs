@@ -64,3 +64,39 @@ function getFiles(dirname) {
 //   console.log(err)
 // })
 
+
+const copyFolder = (filePath, copyPath) => {
+  if (fs.existsSync(filePath)) {
+    if (!fs.existsSync(copyPath)){  
+      fs.mkdirSync(copyPath);
+    }
+    const files = fs.readdirSync(filePath);
+    files.forEach((file) => {
+      const nextFilePath = `${filePath}/${file}`;
+      const states = fs.statSync(nextFilePath);
+      if (states.isDirectory()) {
+        copyFolder(nextFilePath, `${copyPath}/${file}`);
+      } else {
+        fs.copyFile(nextFilePath, `${copyPath}/${file}`, () => {});
+      }
+    });
+  }
+};
+
+const deleteFolder = (filePath) => {
+  if (fs.existsSync(filePath)) {
+    const files = fs.readdirSync(filePath);
+    files.forEach((file) => {
+      const nextFilePath = `${filePath}/${file}`;
+      const states = fs.statSync(nextFilePath);
+      if (states.isDirectory()) {
+        deleteFolder(nextFilePath);
+      } else {
+        fs.unlinkSync(nextFilePath);
+      }
+    });
+    fs.rmdirSync(filePath);
+  }
+};
+
+

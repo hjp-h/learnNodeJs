@@ -3,8 +3,9 @@ const fs = require('fs');
 const filePath = './test.txt'
 
 //1.同步读取文件信息
-// const info = fs.statSync(filePath)
-// console.log(info)
+const info = fs.statSync(filePath)
+console.log(info.isDirectory())
+console.log(info)
 
 //2.异步读取文件信息
 // fs.stat(filePath, (err,info) => {
