@@ -99,4 +99,39 @@ const deleteFolder = (filePath) => {
   }
 };
 
+const getCurrentEnv = () => {
+  const { npm_config_argv } = process.env;
+  return npm_config_argv
+    ? (JSON.parse(npm_config_argv).original[1] ?? "").match(/--env=(?<env>\S+)/)
+        ?.groups?.env
+    : "";
+}
+
+const  { buildDir, copyDir, copyFileType } = {
+  buildDir: "dist",
+  copyFileType: ["html", "js"],
+  copyDir: ["public"],
+}
+// webpakc打包类似
+const build = () => {
+  const env = getCurrentEnv();
+  const dir = `./${buildDir}`;
+  deleteFolder(dir);
+  fs.mkdirSync(dir);
+  fs.writeFileSync(`${dir}/.env`, `env=${env ? env : "prod"}`, {}, () => {});
+  const files = fs.readdirSync("./");
+  files.forEach((file) => {
+    const filePath = `./${file}`;
+    if (copyDir.includes(file)) {
+      copyFolder(filePath, `${dir}/${file}`);
+    } else {
+      const fileType = file.split(".")?.[1] ?? "";
+      if (copyFileType.includes(fileType)) {
+        fs.copyFile(filePath, `${dir}/${file}`, () => {});
+      }
+    }
+  });
+};
+build();
+
 
