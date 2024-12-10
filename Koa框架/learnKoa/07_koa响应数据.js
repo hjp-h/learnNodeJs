@@ -17,7 +17,7 @@ app.use((ctx,next) => {
   }
 
   //响应数组
-  // ctx.body = ['hjp','lqh']
+  // ctx.body = ['hjp','xws']
 });
 
 app.listen(8888,() => {

@@ -199,6 +199,6 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', 'hjp', '202cb962ac59075b964b07152d234b70', null, '2021-06-16 21:27:35', '2021-06-16 21:27:35');
-INSERT INTO `user` VALUES ('2', 'lqh', '202cb962ac59075b964b07152d234b70', null, '2021-06-16 21:30:17', '2021-06-16 21:30:17');
+INSERT INTO `user` VALUES ('2', 'xws', '202cb962ac59075b964b07152d234b70', null, '2021-06-16 21:30:17', '2021-06-16 21:30:17');
 INSERT INTO `user` VALUES ('3', 'coderwhy', '202cb962ac59075b964b07152d234b70', null, '2021-06-16 21:30:20', '2021-06-16 21:30:20');
 INSERT INTO `user` VALUES ('4', 'sanwitch', '202cb962ac59075b964b07152d234b70', 'http://localhost:8888/user/4/avatar', '2021-06-22 17:30:41', '2021-06-22 17:30:41');

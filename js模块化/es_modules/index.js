@@ -9,9 +9,9 @@
 // console.log(name);
 // sayHello('curry');
 
-import {name,sayHello} from './modules/bar.js'
+import {name,sayHello,info} from './modules/bar.js'
 import defaultF from './modules/foo.js'
-console.log(name);
+console.log(name,info.name);
 sayHello('curry');
 defaultF();
 let flag = true;

@@ -6,7 +6,7 @@ const app = new Koa();
 const loginRouter = new Router();
 
 // 加密token的密钥
-const SECRET_KEY = 'hjplqh'
+const SECRET_KEY = 'hjpxws'
 loginRouter.get('/login',(ctx,next) => {
   // token携带的数据
   const user = {name:'hjp',password:'123'}

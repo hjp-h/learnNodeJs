@@ -9,10 +9,12 @@ const name = 'hjp'
 function sayHello(newName = this.name) {
   console.log('你好',newName)
 }
+const info = {name:'hjp'}
 //注意：这里的export是关键字 {}是一种语法
 export {
   name,
-  sayHello
+  sayHello,
+  info
 }
 
 // 默认导出 导出的只有一个
