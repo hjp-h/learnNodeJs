@@ -1,0 +1,425 @@
+2025-01-10 18:27:50,974 INFO 47001 [egg:logger] init all loggers with options: {"dir":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/logs/egg-learning","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-learning-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-01-10 18:27:50,979 INFO 47001 [egg:core] dump config after load, 2ms
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher] Start watching: ["/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"]
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app"
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config"
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks"
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy"
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"
+2025-01-10 18:27:51,003 INFO 47001 [egg-watcher:agent] watcher start success
+2025-01-10 18:27:51,016 INFO 47001 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [182ms] - #0 Process Start
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [103ms] - #1 Application Start
+                                ▇ [4ms] - #2 Load Plugin
+                                 ▇ [7ms] - #3 Load Config
+                                 ▇ [0ms] - #4 Require(0) config/config.default.js
+                                 ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                 ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                 ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                 ▇ [1ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                 ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                 ▇ [1ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                  ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                  ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                  ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                  ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                  ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                  ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                  ▇ [0ms] - #17 Require(13) node_modules/egg/config/config.default.js
+                                  ▇ [0ms] - #18 Require(14) config/config.default.js
+                                  ▇ [0ms] - #19 Require(15) node_modules/egg-security/config/config.local.js
+                                  ▇ [0ms] - #20 Require(16) node_modules/egg-watcher/config/config.local.js
+                                  ▇ [1ms] - #21 Require(17) node_modules/egg-view/config/config.local.js
+                                  ▇ [0ms] - #22 Require(18) node_modules/egg/config/config.local.js
+                                  ▇▇▇ [22ms] - #23 Load extend/agent.js
+                                  ▇ [1ms] - #24 Require(19) node_modules/egg-security/app/extend/agent.js
+                                  ▇▇▇ [19ms] - #25 Require(20) node_modules/egg-schedule/app/extend/agent.js
+                                      ▇ [1ms] - #26 Require(21) node_modules/egg-logrotator/app/extend/agent.js
+                                      ▇▇ [17ms] - #27 Load extend/context.js
+                                      ▇ [4ms] - #28 Require(22) node_modules/egg-security/app/extend/context.js
+                                       ▇ [1ms] - #29 Require(23) node_modules/egg-jsonp/app/extend/context.js
+                                       ▇ [0ms] - #30 Require(24) node_modules/egg-i18n/app/extend/context.js
+                                       ▇ [10ms] - #31 Require(25) node_modules/egg-multipart/app/extend/context.js
+                                         ▇ [0ms] - #32 Require(26) node_modules/egg-view/app/extend/context.js
+                                         ▇ [1ms] - #33 Require(27) node_modules/egg/app/extend/context.js
+                                         ▇ [7ms] - #34 Load agent.js
+                                         ▇ [1ms] - #35 Require(28) node_modules/egg-security/agent.js
+                                         ▇ [0ms] - #36 Require(29) node_modules/egg-onerror/agent.js
+                                         ▇ [2ms] - #37 Require(30) node_modules/egg-watcher/agent.js
+                                         ▇ [1ms] - #38 Require(31) node_modules/egg-schedule/agent.js
+                                          ▇ [3ms] - #39 Require(32) node_modules/egg-development/agent.js
+                                          ▇ [0ms] - #40 Require(33) node_modules/egg-logrotator/agent.js
+                                          ▇ [0ms] - #41 Require(34) node_modules/egg/agent.js
+                                           ▇▇▇▇ [28ms] - #42 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                           ▇▇▇ [19ms] - #43 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                           ▇▇▇▇▇ [29ms] - #44 Before Start in node_modules/egg-development/agent.js:9:9
+2025-01-10 18:27:51,016 INFO 47001 [egg:core] dump config after ready, 4ms
+2025-01-10 18:27:51,358 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/public","stat":{"dev":16777230,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4349229,"size":64,"blocks":0,"atimeMs":1736504871346.3403,"mtimeMs":1736504871346.3403,"ctimeMs":1736504871346.38,"birthtimeMs":1736504871346.3403,"atime":"2025-01-10T10:27:51.346Z","mtime":"2025-01-10T10:27:51.346Z","ctime":"2025-01-10T10:27:51.346Z","birthtime":"2025-01-10T10:27:51.346Z"},"remove":false,"isDirectory":true,"isFile":false}
+2025-01-10 18:35:06,333 WARN 47001 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/plugin.js rename
+2025-01-10 18:35:06,126 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/plugin.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350455,"size":0,"blocks":0,"atimeMs":1736505306027.6838,"mtimeMs":1736505306027.6838,"ctimeMs":1736505306027.7542,"birthtimeMs":1736505306027.6838,"atime":"2025-01-10T10:35:06.028Z","mtime":"2025-01-10T10:35:06.028Z","ctime":"2025-01-10T10:35:06.028Z","birthtime":"2025-01-10T10:35:06.028Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:36:26,467 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/plugin.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350455,"size":94,"blocks":8,"atimeMs":1736505386432.4763,"mtimeMs":1736505386404.4824,"ctimeMs":1736505386404.4824,"birthtimeMs":1736505306027.6838,"atime":"2025-01-10T10:36:26.432Z","mtime":"2025-01-10T10:36:26.404Z","ctime":"2025-01-10T10:36:26.404Z","birthtime":"2025-01-10T10:35:06.028Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:36:26,669 WARN 47001 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/plugin.js change
+2025-01-10 18:37:34,340 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view","stat":{"dev":16777230,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350672,"size":64,"blocks":0,"atimeMs":1736505454277.4006,"mtimeMs":1736505454277.4006,"ctimeMs":1736505454278.39,"birthtimeMs":1736505454277.4006,"atime":"2025-01-10T10:37:34.277Z","mtime":"2025-01-10T10:37:34.277Z","ctime":"2025-01-10T10:37:34.278Z","birthtime":"2025-01-10T10:37:34.277Z"},"remove":false,"isDirectory":true,"isFile":false}
+2025-01-10 18:37:44,186 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view/news","stat":{"dev":16777230,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350675,"size":64,"blocks":0,"atimeMs":1736505464174.2942,"mtimeMs":1736505464174.2942,"ctimeMs":1736505464174.3499,"birthtimeMs":1736505464174.2942,"atime":"2025-01-10T10:37:44.174Z","mtime":"2025-01-10T10:37:44.174Z","ctime":"2025-01-10T10:37:44.174Z","birthtime":"2025-01-10T10:37:44.174Z"},"remove":false,"isDirectory":true,"isFile":false}
+2025-01-10 18:37:53,163 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view/news/list.tpl","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350685,"size":0,"blocks":0,"atimeMs":1736505473152.28,"mtimeMs":1736505473152.28,"ctimeMs":1736505473152.3472,"birthtimeMs":1736505473152.28,"atime":"2025-01-10T10:37:53.152Z","mtime":"2025-01-10T10:37:53.152Z","ctime":"2025-01-10T10:37:53.152Z","birthtime":"2025-01-10T10:37:53.152Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:38:28,997 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view/news/list.tpl","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350685,"size":362,"blocks":8,"atimeMs":1736505508958.4644,"mtimeMs":1736505508935.8672,"ctimeMs":1736505508935.8672,"birthtimeMs":1736505473152.28,"atime":"2025-01-10T10:38:28.958Z","mtime":"2025-01-10T10:38:28.936Z","ctime":"2025-01-10T10:38:28.936Z","birthtime":"2025-01-10T10:37:53.152Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:39:03,250 WARN 47001 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/new.js rename
+2025-01-10 18:39:03,048 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/new.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350804,"size":0,"blocks":0,"atimeMs":1736505542984.4546,"mtimeMs":1736505542984.4546,"ctimeMs":1736505542984.516,"birthtimeMs":1736505542984.4546,"atime":"2025-01-10T10:39:02.984Z","mtime":"2025-01-10T10:39:02.984Z","ctime":"2025-01-10T10:39:02.985Z","birthtime":"2025-01-10T10:39:02.984Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:40:08,433 WARN 47001 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/new.js change
+2025-01-10 18:40:08,231 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/new.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350804,"size":371,"blocks":8,"atimeMs":1736505608178.81,"mtimeMs":1736505608167.835,"ctimeMs":1736505608167.835,"birthtimeMs":1736505542984.4546,"atime":"2025-01-10T10:40:08.179Z","mtime":"2025-01-10T10:40:08.168Z","ctime":"2025-01-10T10:40:08.168Z","birthtime":"2025-01-10T10:39:02.984Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:40:24,468 WARN 47001 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/router.js change
+2025-01-10 18:40:24,266 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/router.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4327293,"size":154,"blocks":8,"atimeMs":1736505624235.19,"mtimeMs":1736505624205.0012,"ctimeMs":1736505624205.0012,"birthtimeMs":1736504452114.4912,"atime":"2025-01-10T10:40:24.235Z","mtime":"2025-01-10T10:40:24.205Z","ctime":"2025-01-10T10:40:24.205Z","birthtime":"2025-01-10T10:20:52.114Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:40:25,723 WARN 47001 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/config.default.js change
+2025-01-10 18:40:25,521 INFO 47001 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/config.default.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4327809,"size":144,"blocks":8,"atimeMs":1736505625520.5493,"mtimeMs":1736505625509.7842,"ctimeMs":1736505625509.7842,"birthtimeMs":1736504606582.0635,"atime":"2025-01-10T10:40:25.521Z","mtime":"2025-01-10T10:40:25.510Z","ctime":"2025-01-10T10:40:25.510Z","birthtime":"2025-01-10T10:23:26.582Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 18:40:45,021 INFO 51923 [egg:logger] init all loggers with options: {"dir":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/logs/egg-learning","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-learning-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-01-10 18:40:45,026 INFO 51923 [egg:core] dump config after load, 3ms
+2025-01-10 18:40:45,048 INFO 51923 [egg-watcher] Start watching: ["/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"]
+2025-01-10 18:40:45,048 INFO 51923 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app"
+2025-01-10 18:40:45,048 INFO 51923 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config"
+2025-01-10 18:40:45,048 INFO 51923 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks"
+2025-01-10 18:40:45,049 INFO 51923 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy"
+2025-01-10 18:40:45,049 INFO 51923 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"
+2025-01-10 18:40:45,049 INFO 51923 [egg-watcher:agent] watcher start success
+2025-01-10 18:40:45,060 INFO 51923 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [184ms] - #0 Process Start
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [101ms] - #1 Application Start
+                                ▇ [4ms] - #2 Load Plugin
+                                 ▇ [7ms] - #3 Load Config
+                                 ▇ [1ms] - #4 Require(0) config/config.default.js
+                                 ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                 ▇ [1ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                 ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                 ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                 ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                  ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                  ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                  ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                  ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                  ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                  ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                  ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                  ▇ [1ms] - #17 Require(13) node_modules/egg-view-nunjucks/config/config.default.js
+                                  ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                  ▇ [0ms] - #19 Require(15) config/config.default.js
+                                  ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                  ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                  ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                  ▇ [0ms] - #23 Require(19) node_modules/egg-view-nunjucks/config/config.local.js
+                                  ▇ [0ms] - #24 Require(20) node_modules/egg/config/config.local.js
+                                  ▇▇▇▇ [24ms] - #25 Load extend/agent.js
+                                  ▇ [2ms] - #26 Require(21) node_modules/egg-security/app/extend/agent.js
+                                  ▇▇▇ [20ms] - #27 Require(22) node_modules/egg-schedule/app/extend/agent.js
+                                      ▇ [1ms] - #28 Require(23) node_modules/egg-logrotator/app/extend/agent.js
+                                      ▇▇ [17ms] - #29 Load extend/context.js
+                                      ▇ [6ms] - #30 Require(24) node_modules/egg-security/app/extend/context.js
+                                       ▇ [0ms] - #31 Require(25) node_modules/egg-jsonp/app/extend/context.js
+                                       ▇ [1ms] - #32 Require(26) node_modules/egg-i18n/app/extend/context.js
+                                       ▇ [8ms] - #33 Require(27) node_modules/egg-multipart/app/extend/context.js
+                                         ▇ [0ms] - #34 Require(28) node_modules/egg-view/app/extend/context.js
+                                         ▇ [1ms] - #35 Require(29) node_modules/egg/app/extend/context.js
+                                         ▇ [7ms] - #36 Load agent.js
+                                         ▇ [1ms] - #37 Require(30) node_modules/egg-security/agent.js
+                                         ▇ [0ms] - #38 Require(31) node_modules/egg-onerror/agent.js
+                                         ▇ [2ms] - #39 Require(32) node_modules/egg-watcher/agent.js
+                                          ▇ [1ms] - #40 Require(33) node_modules/egg-schedule/agent.js
+                                          ▇ [3ms] - #41 Require(34) node_modules/egg-development/agent.js
+                                          ▇ [0ms] - #42 Require(35) node_modules/egg-logrotator/agent.js
+                                          ▇ [0ms] - #43 Require(36) node_modules/egg/agent.js
+                                           ▇▇▇▇ [27ms] - #44 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                           ▇▇▇ [19ms] - #45 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                           ▇▇▇▇▇ [34ms] - #46 Before Start in node_modules/egg-development/agent.js:9:9
+2025-01-10 18:40:45,060 INFO 51923 [egg:core] dump config after ready, 4ms
+2025-01-10 18:41:22,190 INFO 52541 [egg:logger] init all loggers with options: {"dir":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/logs/egg-learning","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-learning-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-01-10 18:41:22,195 INFO 52541 [egg:core] dump config after load, 3ms
+2025-01-10 18:41:22,218 INFO 52541 [egg-watcher] Start watching: ["/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"]
+2025-01-10 18:41:22,218 INFO 52541 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app"
+2025-01-10 18:41:22,218 INFO 52541 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config"
+2025-01-10 18:41:22,218 INFO 52541 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks"
+2025-01-10 18:41:22,218 INFO 52541 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy"
+2025-01-10 18:41:22,219 INFO 52541 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"
+2025-01-10 18:41:22,219 INFO 52541 [egg-watcher:agent] watcher start success
+2025-01-10 18:41:22,229 INFO 52541 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [182ms] - #0 Process Start
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [102ms] - #1 Application Start
+                                ▇ [4ms] - #2 Load Plugin
+                                 ▇ [7ms] - #3 Load Config
+                                 ▇ [1ms] - #4 Require(0) config/config.default.js
+                                 ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                 ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                 ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                 ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                 ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                 ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                 ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                 ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                 ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                 ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                 ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                 ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                 ▇ [0ms] - #17 Require(13) node_modules/egg-view-nunjucks/config/config.default.js
+                                 ▇ [1ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                  ▇ [0ms] - #19 Require(15) config/config.default.js
+                                  ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                  ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                  ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                  ▇ [0ms] - #23 Require(19) node_modules/egg-view-nunjucks/config/config.local.js
+                                  ▇ [0ms] - #24 Require(20) node_modules/egg/config/config.local.js
+                                  ▇▇▇▇ [25ms] - #25 Load extend/agent.js
+                                  ▇ [0ms] - #26 Require(21) node_modules/egg-security/app/extend/agent.js
+                                  ▇▇▇ [22ms] - #27 Require(22) node_modules/egg-schedule/app/extend/agent.js
+                                      ▇ [1ms] - #28 Require(23) node_modules/egg-logrotator/app/extend/agent.js
+                                      ▇▇▇ [18ms] - #29 Load extend/context.js
+                                      ▇ [6ms] - #30 Require(24) node_modules/egg-security/app/extend/context.js
+                                       ▇ [1ms] - #31 Require(25) node_modules/egg-jsonp/app/extend/context.js
+                                       ▇ [0ms] - #32 Require(26) node_modules/egg-i18n/app/extend/context.js
+                                       ▇ [9ms] - #33 Require(27) node_modules/egg-multipart/app/extend/context.js
+                                         ▇ [1ms] - #34 Require(28) node_modules/egg-view/app/extend/context.js
+                                         ▇ [1ms] - #35 Require(29) node_modules/egg/app/extend/context.js
+                                         ▇ [7ms] - #36 Load agent.js
+                                         ▇ [0ms] - #37 Require(30) node_modules/egg-security/agent.js
+                                         ▇ [0ms] - #38 Require(31) node_modules/egg-onerror/agent.js
+                                         ▇ [2ms] - #39 Require(32) node_modules/egg-watcher/agent.js
+                                          ▇ [1ms] - #40 Require(33) node_modules/egg-schedule/agent.js
+                                          ▇ [3ms] - #41 Require(34) node_modules/egg-development/agent.js
+                                          ▇ [0ms] - #42 Require(35) node_modules/egg-logrotator/agent.js
+                                          ▇ [0ms] - #43 Require(36) node_modules/egg/agent.js
+                                           ▇▇▇▇ [28ms] - #44 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                           ▇▇▇ [19ms] - #45 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                           ▇▇▇▇▇ [31ms] - #46 Before Start in node_modules/egg-development/agent.js:9:9
+2025-01-10 18:41:22,229 INFO 52541 [egg:core] dump config after ready, 5ms
+2025-01-10 18:46:41,547 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 118951ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 18:51:41,303 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 259760ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 18:56:42,043 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 260683ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 19:14:16,760 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 1014710ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 20:12:23,984 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/home.js change
+2025-01-10 20:12:23,772 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/home.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4301068,"size":180,"blocks":8,"atimeMs":1736511143719.4136,"mtimeMs":1736511143697.2815,"ctimeMs":1736511143697.2815,"birthtimeMs":1736503987939.7808,"atime":"2025-01-10T12:12:23.719Z","mtime":"2025-01-10T12:12:23.697Z","ctime":"2025-01-10T12:12:23.697Z","birthtime":"2025-01-10T10:13:07.940Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:12:43,363 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/home.js change
+2025-01-10 20:12:43,162 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/home.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4301068,"size":180,"blocks":8,"atimeMs":1736511163124.2156,"mtimeMs":1736511163099.2463,"ctimeMs":1736511163099.2463,"birthtimeMs":1736503987939.7808,"atime":"2025-01-10T12:12:43.124Z","mtime":"2025-01-10T12:12:43.099Z","ctime":"2025-01-10T12:12:43.099Z","birthtime":"2025-01-10T10:13:07.940Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:14:56,681 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service","stat":{"dev":16777230,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365644,"size":64,"blocks":0,"atimeMs":1736511296617.4902,"mtimeMs":1736511296617.4902,"ctimeMs":1736511296617.5432,"birthtimeMs":1736511296617.4902,"atime":"2025-01-10T12:14:56.617Z","mtime":"2025-01-10T12:14:56.617Z","ctime":"2025-01-10T12:14:56.618Z","birthtime":"2025-01-10T12:14:56.617Z"},"remove":false,"isDirectory":true,"isFile":false}
+2025-01-10 20:15:02,063 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":0,"blocks":0,"atimeMs":1736511302053.218,"mtimeMs":1736511302053.218,"ctimeMs":1736511302053.2654,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:15:02.053Z","mtime":"2025-01-10T12:15:02.053Z","ctime":"2025-01-10T12:15:02.053Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:15:02,265 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js rename
+2025-01-10 20:15:18,473 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/news.js rename
+2025-01-10 20:15:18,271 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365664,"size":0,"blocks":0,"atimeMs":1736511318192.9878,"mtimeMs":1736511318192.9878,"ctimeMs":1736511318193.0425,"birthtimeMs":1736511318192.9878,"atime":"2025-01-10T12:15:18.193Z","mtime":"2025-01-10T12:15:18.193Z","ctime":"2025-01-10T12:15:18.193Z","birthtime":"2025-01-10T12:15:18.193Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:15:38,681 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/news.js rename
+2025-01-10 20:15:38,479 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365664,"size":89,"blocks":8,"atimeMs":1736511338438.6162,"mtimeMs":1736511338417.3894,"ctimeMs":1736511338417.3894,"birthtimeMs":1736511318192.9878,"atime":"2025-01-10T12:15:38.439Z","mtime":"2025-01-10T12:15:38.417Z","ctime":"2025-01-10T12:15:38.417Z","birthtime":"2025-01-10T12:15:18.193Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:26:34,504 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:26:34,302 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":746,"blocks":8,"atimeMs":1736511994250.4014,"mtimeMs":1736511994239.513,"ctimeMs":1736511994239.513,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:26:34.250Z","mtime":"2025-01-10T12:26:34.240Z","ctime":"2025-01-10T12:26:34.240Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:26:47,539 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:26:47,337 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":776,"blocks":8,"atimeMs":1736512007337.084,"mtimeMs":1736512007325.0657,"ctimeMs":1736512007325.0657,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:26:47.337Z","mtime":"2025-01-10T12:26:47.325Z","ctime":"2025-01-10T12:26:47.325Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:28:19,925 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js change
+2025-01-10 20:28:19,724 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350804,"size":330,"blocks":8,"atimeMs":1736512099688.366,"mtimeMs":1736512099661.6597,"ctimeMs":1736512099661.6597,"birthtimeMs":1736505542984.4546,"atime":"2025-01-10T12:28:19.688Z","mtime":"2025-01-10T12:28:19.662Z","ctime":"2025-01-10T12:28:19.662Z","birthtime":"2025-01-10T10:39:02.984Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:29:44,606 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/news.js rename
+2025-01-10 20:29:44,405 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/news.js","remove":true,"isDirectory":false,"isFile":false}
+2025-01-10 20:29:45,821 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/config.default.js change
+2025-01-10 20:29:45,619 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/config.default.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4327809,"size":234,"blocks":8,"atimeMs":1736512185587.4753,"mtimeMs":1736512185576.8735,"ctimeMs":1736512185576.8735,"birthtimeMs":1736504606582.0635,"atime":"2025-01-10T12:29:45.587Z","mtime":"2025-01-10T12:29:45.577Z","ctime":"2025-01-10T12:29:45.577Z","birthtime":"2025-01-10T10:23:26.582Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:30:56,107 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":779,"blocks":8,"atimeMs":1736512256074.3333,"mtimeMs":1736512256046.4534,"ctimeMs":1736512256046.4534,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:30:56.074Z","mtime":"2025-01-10T12:30:56.046Z","ctime":"2025-01-10T12:30:56.046Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:30:56,309 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:31:47,022 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:31:46,821 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":772,"blocks":8,"atimeMs":1736512306788.2454,"mtimeMs":1736512306758.9983,"ctimeMs":1736512306758.9983,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:31:46.788Z","mtime":"2025-01-10T12:31:46.759Z","ctime":"2025-01-10T12:31:46.759Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:32:38,194 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:32:37,993 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":776,"blocks":8,"atimeMs":1736512357992.3118,"mtimeMs":1736512357930.0632,"ctimeMs":1736512357930.0632,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:32:37.992Z","mtime":"2025-01-10T12:32:37.930Z","ctime":"2025-01-10T12:32:37.930Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:32:58,269 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:32:58,067 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":774,"blocks":8,"atimeMs":1736512378029.9595,"mtimeMs":1736512378005.8438,"ctimeMs":1736512378005.8438,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:32:58.030Z","mtime":"2025-01-10T12:32:58.006Z","ctime":"2025-01-10T12:32:58.006Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:34:12,278 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":772,"blocks":8,"atimeMs":1736512452240.865,"mtimeMs":1736512452216.1475,"ctimeMs":1736512452216.1475,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:34:12.241Z","mtime":"2025-01-10T12:34:12.216Z","ctime":"2025-01-10T12:34:12.216Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:34:12,480 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:36:02,469 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:36:02,268 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":774,"blocks":8,"atimeMs":1736512562232.7424,"mtimeMs":1736512562206.4922,"ctimeMs":1736512562206.4922,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:36:02.233Z","mtime":"2025-01-10T12:36:02.206Z","ctime":"2025-01-10T12:36:02.206Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:37:47,526 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:37:47,322 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":776,"blocks":8,"atimeMs":1736512667321.7063,"mtimeMs":1736512667261.1497,"ctimeMs":1736512667261.1497,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:37:47.322Z","mtime":"2025-01-10T12:37:47.261Z","ctime":"2025-01-10T12:37:47.261Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:38:22,473 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:38:22,272 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":780,"blocks":8,"atimeMs":1736512702233.4937,"mtimeMs":1736512702209.8975,"ctimeMs":1736512702209.8975,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:38:22.233Z","mtime":"2025-01-10T12:38:22.210Z","ctime":"2025-01-10T12:38:22.210Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:40:27,355 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:40:27,152 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":706,"blocks":8,"atimeMs":1736512827119.0784,"mtimeMs":1736512827089.7114,"ctimeMs":1736512827089.7114,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:40:27.119Z","mtime":"2025-01-10T12:40:27.090Z","ctime":"2025-01-10T12:40:27.090Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:41:46,530 WARN 52541 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:41:46,329 INFO 52541 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":714,"blocks":8,"atimeMs":1736512906328.9788,"mtimeMs":1736512906267.4104,"ctimeMs":1736512906267.4104,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:41:46.329Z","mtime":"2025-01-10T12:41:46.267Z","ctime":"2025-01-10T12:41:46.267Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:42:29,744 INFO 2318 [egg:logger] init all loggers with options: {"dir":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/logs/egg-learning","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-learning-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-01-10 20:42:29,750 INFO 2318 [egg:core] dump config after load, 3ms
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher] Start watching: ["/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"]
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app"
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config"
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks"
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy"
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"
+2025-01-10 20:42:29,775 INFO 2318 [egg-watcher:agent] watcher start success
+2025-01-10 20:42:29,797 INFO 2318 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [192ms] - #0 Process Start
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [122ms] - #1 Application Start
+                               ▇ [4ms] - #2 Load Plugin
+                               ▇ [7ms] - #3 Load Config
+                               ▇ [1ms] - #4 Require(0) config/config.default.js
+                               ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                               ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                ▇ [1ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                ▇ [1ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                ▇ [0ms] - #17 Require(13) node_modules/egg-view-nunjucks/config/config.default.js
+                                ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                ▇ [0ms] - #19 Require(15) config/config.default.js
+                                ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                ▇ [0ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                ▇ [0ms] - #23 Require(19) node_modules/egg-view-nunjucks/config/config.local.js
+                                ▇ [0ms] - #24 Require(20) node_modules/egg/config/config.local.js
+                                 ▇▇▇▇ [26ms] - #25 Load extend/agent.js
+                                 ▇ [1ms] - #26 Require(21) node_modules/egg-security/app/extend/agent.js
+                                 ▇▇▇ [23ms] - #27 Require(22) node_modules/egg-schedule/app/extend/agent.js
+                                    ▇ [0ms] - #28 Require(23) node_modules/egg-logrotator/app/extend/agent.js
+                                     ▇▇ [19ms] - #29 Load extend/context.js
+                                     ▇ [6ms] - #30 Require(24) node_modules/egg-security/app/extend/context.js
+                                      ▇ [1ms] - #31 Require(25) node_modules/egg-jsonp/app/extend/context.js
+                                      ▇ [0ms] - #32 Require(26) node_modules/egg-i18n/app/extend/context.js
+                                      ▇ [10ms] - #33 Require(27) node_modules/egg-multipart/app/extend/context.js
+                                       ▇ [1ms] - #34 Require(28) node_modules/egg-view/app/extend/context.js
+                                       ▇ [0ms] - #35 Require(29) node_modules/egg/app/extend/context.js
+                                        ▇ [8ms] - #36 Load agent.js
+                                        ▇ [0ms] - #37 Require(30) node_modules/egg-security/agent.js
+                                        ▇ [0ms] - #38 Require(31) node_modules/egg-onerror/agent.js
+                                        ▇ [2ms] - #39 Require(32) node_modules/egg-watcher/agent.js
+                                        ▇ [0ms] - #40 Require(33) node_modules/egg-schedule/agent.js
+                                        ▇ [4ms] - #41 Require(34) node_modules/egg-development/agent.js
+                                         ▇ [0ms] - #42 Require(35) node_modules/egg-logrotator/agent.js
+                                         ▇ [0ms] - #43 Require(36) node_modules/egg/agent.js
+                                         ▇▇▇▇ [30ms] - #44 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                         ▇▇▇ [21ms] - #45 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                         ▇▇▇▇▇▇▇ [47ms] - #46 Before Start in node_modules/egg-development/agent.js:9:9
+2025-01-10 20:42:29,797 INFO 2318 [egg:core] dump config after ready, 4ms
+2025-01-10 20:43:51,166 INFO 3529 [egg:logger] init all loggers with options: {"dir":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/logs/egg-learning","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-learning-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2025-01-10 20:43:51,172 INFO 3529 [egg:core] dump config after load, 3ms
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher] Start watching: ["/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy","/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"]
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app"
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config"
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks"
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/mocks_proxy"
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher] Start watching: "/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app.js"
+2025-01-10 20:43:51,198 INFO 3529 [egg-watcher:agent] watcher start success
+2025-01-10 20:43:51,220 INFO 3529 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [205ms] - #0 Process Start
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [121ms] - #1 Application Start
+                               ▇ [5ms] - #2 Load Plugin
+                                ▇ [8ms] - #3 Load Config
+                                ▇ [1ms] - #4 Require(0) config/config.default.js
+                                ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                 ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                 ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                 ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                 ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                 ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                 ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                 ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                 ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                 ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                 ▇ [0ms] - #17 Require(13) node_modules/egg-view-nunjucks/config/config.default.js
+                                 ▇ [0ms] - #18 Require(14) node_modules/egg/config/config.default.js
+                                 ▇ [0ms] - #19 Require(15) config/config.default.js
+                                 ▇ [0ms] - #20 Require(16) node_modules/egg-security/config/config.local.js
+                                 ▇ [0ms] - #21 Require(17) node_modules/egg-watcher/config/config.local.js
+                                 ▇ [1ms] - #22 Require(18) node_modules/egg-view/config/config.local.js
+                                 ▇ [0ms] - #23 Require(19) node_modules/egg-view-nunjucks/config/config.local.js
+                                 ▇ [0ms] - #24 Require(20) node_modules/egg/config/config.local.js
+                                 ▇▇▇ [25ms] - #25 Load extend/agent.js
+                                 ▇ [1ms] - #26 Require(21) node_modules/egg-security/app/extend/agent.js
+                                 ▇▇▇ [23ms] - #27 Require(22) node_modules/egg-schedule/app/extend/agent.js
+                                     ▇ [0ms] - #28 Require(23) node_modules/egg-logrotator/app/extend/agent.js
+                                     ▇▇ [19ms] - #29 Load extend/context.js
+                                     ▇ [6ms] - #30 Require(24) node_modules/egg-security/app/extend/context.js
+                                      ▇ [1ms] - #31 Require(25) node_modules/egg-jsonp/app/extend/context.js
+                                      ▇ [0ms] - #32 Require(26) node_modules/egg-i18n/app/extend/context.js
+                                      ▇ [10ms] - #33 Require(27) node_modules/egg-multipart/app/extend/context.js
+                                        ▇ [0ms] - #34 Require(28) node_modules/egg-view/app/extend/context.js
+                                        ▇ [1ms] - #35 Require(29) node_modules/egg/app/extend/context.js
+                                        ▇ [9ms] - #36 Load agent.js
+                                        ▇ [1ms] - #37 Require(30) node_modules/egg-security/agent.js
+                                        ▇ [0ms] - #38 Require(31) node_modules/egg-onerror/agent.js
+                                        ▇ [3ms] - #39 Require(32) node_modules/egg-watcher/agent.js
+                                         ▇ [0ms] - #40 Require(33) node_modules/egg-schedule/agent.js
+                                         ▇ [3ms] - #41 Require(34) node_modules/egg-development/agent.js
+                                         ▇ [0ms] - #42 Require(35) node_modules/egg-logrotator/agent.js
+                                         ▇ [0ms] - #43 Require(36) node_modules/egg/agent.js
+                                          ▇▇▇▇ [30ms] - #44 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                          ▇▇▇ [22ms] - #45 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                          ▇▇▇▇▇▇ [45ms] - #46 Before Start in node_modules/egg-development/agent.js:9:9
+2025-01-10 20:43:51,220 INFO 3529 [egg:core] dump config after ready, 6ms
+2025-01-10 20:44:11,014 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":716,"blocks":8,"atimeMs":1736513051012.4807,"mtimeMs":1736513050950.2588,"ctimeMs":1736513050950.2588,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:44:11.012Z","mtime":"2025-01-10T12:44:10.950Z","ctime":"2025-01-10T12:44:10.950Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:44:11,216 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:44:56,168 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:44:55,966 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":735,"blocks":8,"atimeMs":1736513095929.2239,"mtimeMs":1736513095903.5757,"ctimeMs":1736513095903.5757,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:44:55.929Z","mtime":"2025-01-10T12:44:55.904Z","ctime":"2025-01-10T12:44:55.904Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:45:14,832 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:45:14,631 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":739,"blocks":8,"atimeMs":1736513114596.031,"mtimeMs":1736513114569.8647,"ctimeMs":1736513114569.8647,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:45:14.596Z","mtime":"2025-01-10T12:45:14.570Z","ctime":"2025-01-10T12:45:14.570Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:46:09,211 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:46:09,010 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":799,"blocks":8,"atimeMs":1736513168969.1887,"mtimeMs":1736513168946.9492,"ctimeMs":1736513168946.9492,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:46:08.969Z","mtime":"2025-01-10T12:46:08.947Z","ctime":"2025-01-10T12:46:08.947Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:46:13,961 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:46:13,758 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":764,"blocks":8,"atimeMs":1736513173757.5095,"mtimeMs":1736513173747.1042,"ctimeMs":1736513173747.1042,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:46:13.758Z","mtime":"2025-01-10T12:46:13.747Z","ctime":"2025-01-10T12:46:13.747Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:46:57,316 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":825,"blocks":8,"atimeMs":1736513217315.8994,"mtimeMs":1736513217254.4248,"ctimeMs":1736513217254.4248,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:46:57.316Z","mtime":"2025-01-10T12:46:57.254Z","ctime":"2025-01-10T12:46:57.254Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:46:57,518 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:47:06,080 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js rename
+2025-01-10 20:47:05,877 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.ts","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":825,"blocks":8,"atimeMs":1736513217725.332,"mtimeMs":1736513217254.4248,"ctimeMs":1736513225866.392,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:46:57.725Z","mtime":"2025-01-10T12:46:57.254Z","ctime":"2025-01-10T12:47:05.866Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:47:05,879 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","remove":true,"isDirectory":false,"isFile":false}
+2025-01-10 20:47:09,809 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.ts rename
+2025-01-10 20:47:09,606 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.ts","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":878,"blocks":8,"atimeMs":1736513226090.2678,"mtimeMs":1736513229594.5203,"ctimeMs":1736513229594.5203,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:47:06.090Z","mtime":"2025-01-10T12:47:09.595Z","ctime":"2025-01-10T12:47:09.595Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:47:13,589 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.ts rename
+2025-01-10 20:47:13,387 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.ts","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":878,"blocks":8,"atimeMs":1736513229986.855,"mtimeMs":1736513233375.7283,"ctimeMs":1736513233375.7283,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:47:09.987Z","mtime":"2025-01-10T12:47:13.376Z","ctime":"2025-01-10T12:47:13.376Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:47:45,320 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js rename
+2025-01-10 20:47:45,118 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.ts","remove":true,"isDirectory":false,"isFile":false}
+2025-01-10 20:47:45,119 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":878,"blocks":8,"atimeMs":1736513233942.6697,"mtimeMs":1736513233375.7283,"ctimeMs":1736513265054.401,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:47:13.943Z","mtime":"2025-01-10T12:47:13.376Z","ctime":"2025-01-10T12:47:45.054Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:47:47,879 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:47:47,677 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":878,"blocks":8,"atimeMs":1736513265258.0063,"mtimeMs":1736513267666.4658,"ctimeMs":1736513267666.4658,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:47:45.258Z","mtime":"2025-01-10T12:47:47.666Z","ctime":"2025-01-10T12:47:47.666Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:47:50,131 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:47:49,929 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":878,"blocks":8,"atimeMs":1736513269916.708,"mtimeMs":1736513269918.4658,"ctimeMs":1736513269918.4658,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:47:49.917Z","mtime":"2025-01-10T12:47:49.918Z","ctime":"2025-01-10T12:47:49.918Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:48:11,802 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js change
+2025-01-10 20:48:11,600 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":798,"blocks":8,"atimeMs":1736513291600.421,"mtimeMs":1736513291538.1448,"ctimeMs":1736513291538.1448,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T12:48:11.600Z","mtime":"2025-01-10T12:48:11.538Z","ctime":"2025-01-10T12:48:11.538Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:49:04,518 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view/news/list.tpl","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350685,"size":406,"blocks":8,"atimeMs":1736513344482.347,"mtimeMs":1736513344456.2227,"ctimeMs":1736513344456.2227,"birthtimeMs":1736505473152.28,"atime":"2025-01-10T12:49:04.482Z","mtime":"2025-01-10T12:49:04.456Z","ctime":"2025-01-10T12:49:04.456Z","birthtime":"2025-01-10T10:37:53.152Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:49:05,786 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view/news/list.tpl","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350685,"size":410,"blocks":8,"atimeMs":1736513345786.349,"mtimeMs":1736513345775.5557,"ctimeMs":1736513345775.5557,"birthtimeMs":1736505473152.28,"atime":"2025-01-10T12:49:05.786Z","mtime":"2025-01-10T12:49:05.776Z","ctime":"2025-01-10T12:49:05.776Z","birthtime":"2025-01-10T10:37:53.152Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:58:43,561 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend","stat":{"dev":16777230,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4371654,"size":64,"blocks":0,"atimeMs":1736513923494.1907,"mtimeMs":1736513923494.1907,"ctimeMs":1736513923494.2651,"birthtimeMs":1736513923494.1907,"atime":"2025-01-10T12:58:43.494Z","mtime":"2025-01-10T12:58:43.494Z","ctime":"2025-01-10T12:58:43.494Z","birthtime":"2025-01-10T12:58:43.494Z"},"remove":false,"isDirectory":true,"isFile":false}
+2025-01-10 20:58:51,019 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend/helper.js rename
+2025-01-10 20:58:50,816 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend/helper.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4371661,"size":0,"blocks":0,"atimeMs":1736513930804.72,"mtimeMs":1736513930804.72,"ctimeMs":1736513930804.7937,"birthtimeMs":1736513930804.72,"atime":"2025-01-10T12:58:50.805Z","mtime":"2025-01-10T12:58:50.805Z","ctime":"2025-01-10T12:58:50.805Z","birthtime":"2025-01-10T12:58:50.805Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 20:59:44,263 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend/helper.js change
+2025-01-10 20:59:44,061 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend/helper.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4371661,"size":122,"blocks":8,"atimeMs":1736513984025.0168,"mtimeMs":1736513983999.9128,"ctimeMs":1736513983999.9128,"birthtimeMs":1736513930804.72,"atime":"2025-01-10T12:59:44.025Z","mtime":"2025-01-10T12:59:44.000Z","ctime":"2025-01-10T12:59:44.000Z","birthtime":"2025-01-10T12:58:50.805Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:00:50,834 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/view/news/list.tpl","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350685,"size":428,"blocks":8,"atimeMs":1736514050799.1904,"mtimeMs":1736514050773.6042,"ctimeMs":1736514050773.6042,"birthtimeMs":1736505473152.28,"atime":"2025-01-10T13:00:50.799Z","mtime":"2025-01-10T13:00:50.774Z","ctime":"2025-01-10T13:00:50.774Z","birthtime":"2025-01-10T10:37:53.152Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:01:35,847 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend/helper.js change
+2025-01-10 21:01:35,645 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/extend/helper.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4371661,"size":129,"blocks":8,"atimeMs":1736514095607.0227,"mtimeMs":1736514095582.949,"ctimeMs":1736514095582.949,"birthtimeMs":1736513930804.72,"atime":"2025-01-10T13:01:35.607Z","mtime":"2025-01-10T13:01:35.583Z","ctime":"2025-01-10T13:01:35.583Z","birthtime":"2025-01-10T12:58:50.805Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:16:29,308 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/middleware","stat":{"dev":16777230,"mode":16877,"nlink":2,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4372959,"size":64,"blocks":0,"atimeMs":1736514989245.1528,"mtimeMs":1736514989245.1528,"ctimeMs":1736514989245.1914,"birthtimeMs":1736514989245.1528,"atime":"2025-01-10T13:16:29.245Z","mtime":"2025-01-10T13:16:29.245Z","ctime":"2025-01-10T13:16:29.245Z","birthtime":"2025-01-10T13:16:29.245Z"},"remove":false,"isDirectory":true,"isFile":false}
+2025-01-10 21:16:41,789 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/middleware/robot.js rename
+2025-01-10 21:16:41,587 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/middleware/robot.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4372977,"size":0,"blocks":0,"atimeMs":1736515001576.3823,"mtimeMs":1736515001576.3823,"ctimeMs":1736515001576.4255,"birthtimeMs":1736515001576.3823,"atime":"2025-01-10T13:16:41.576Z","mtime":"2025-01-10T13:16:41.576Z","ctime":"2025-01-10T13:16:41.576Z","birthtime":"2025-01-10T13:16:41.576Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:43:30,818 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js change
+2025-01-10 21:43:30,614 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4350804,"size":330,"blocks":8,"atimeMs":1736516610576.5938,"mtimeMs":1736516610550.4875,"ctimeMs":1736516610550.4875,"birthtimeMs":1736505542984.4546,"atime":"2025-01-10T13:43:30.577Z","mtime":"2025-01-10T13:43:30.550Z","ctime":"2025-01-10T13:43:30.550Z","birthtime":"2025-01-10T10:39:02.984Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:46:28,606 WARN 3529 [agent:development] reload worker because /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/middleware/robot.js change
+2025-01-10 21:46:28,405 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4365651,"size":798,"blocks":8,"atimeMs":1736516788366.7014,"mtimeMs":1736516788344.3708,"ctimeMs":1736516788344.3708,"birthtimeMs":1736511302053.218,"atime":"2025-01-10T13:46:28.367Z","mtime":"2025-01-10T13:46:28.344Z","ctime":"2025-01-10T13:46:28.344Z","birthtime":"2025-01-10T12:15:02.053Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:46:28,406 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/config/config.default.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4327809,"size":340,"blocks":8,"atimeMs":1736516788366.6667,"mtimeMs":1736516788343.6885,"ctimeMs":1736516788343.6885,"birthtimeMs":1736504606582.0635,"atime":"2025-01-10T13:46:28.367Z","mtime":"2025-01-10T13:46:28.344Z","ctime":"2025-01-10T13:46:28.344Z","birthtime":"2025-01-10T10:23:26.582Z"},"remove":false,"isDirectory":false,"isFile":true}
+2025-01-10 21:46:28,406 INFO 3529 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/middleware/robot.js","stat":{"dev":16777230,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":4372977,"size":354,"blocks":8,"atimeMs":1736516788366.6833,"mtimeMs":1736516788344.3464,"ctimeMs":1736516788344.3464,"birthtimeMs":1736515001576.3823,"atime":"2025-01-10T13:46:28.367Z","mtime":"2025-01-10T13:46:28.344Z","ctime":"2025-01-10T13:46:28.344Z","birthtime":"2025-01-10T13:16:41.576Z"},"remove":false,"isDirectory":false,"isFile":true}

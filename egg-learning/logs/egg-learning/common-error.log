@@ -1,0 +1,62 @@
+2025-01-10 18:46:41,546 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 118951ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 18:51:41,303 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 259760ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 18:56:42,043 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 260683ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 19:14:16,760 ERROR 52541 nodejs.ClusterClientNoResponseError: client no response in 1014710ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ClusterClientNoResponseError"
+pid: 52541
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 20:28:26,763 ERROR 92618 [-/127.0.0.1/-/16ms GET /news] nodejs.TypeError: Cannot destructure property 'serverUrl' of 'this.config.news' as it is undefined.
+    at NewsService.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js:5:13)
+    at NewsController.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js:7:45)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:45:18)
+    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+
+pid: 92618
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 20:47:18,562 ERROR 6173 [-/127.0.0.1/-/9ms GET /news] nodejs.TypeError: Cannot read property 'list' of undefined
+    at NewsController.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js:7:45)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:45:18)
+    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:36:12
+
+pid: 6173
+hostname: hongjiapengdeMacBook-Pro.local
+

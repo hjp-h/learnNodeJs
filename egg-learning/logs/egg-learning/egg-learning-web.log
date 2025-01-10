@@ -1,0 +1,30 @@
+2025-01-10 20:28:26,764 ERROR 92618 [-/127.0.0.1/-/16ms GET /news] nodejs.TypeError: Cannot destructure property 'serverUrl' of 'this.config.news' as it is undefined.
+    at NewsService.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js:5:13)
+    at NewsController.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js:7:45)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:45:18)
+    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+
+pid: 92618
+hostname: hongjiapengdeMacBook-Pro.local
+
+2025-01-10 20:47:18,563 ERROR 6173 [-/127.0.0.1/-/9ms GET /news] nodejs.TypeError: Cannot read property 'list' of undefined
+    at NewsController.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js:7:45)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:45:18)
+    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:36:12
+
+pid: 6173
+hostname: hongjiapengdeMacBook-Pro.local
+
