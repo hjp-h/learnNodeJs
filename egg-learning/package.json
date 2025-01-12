@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
     "dev": "egg-bin dev"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "egg-view-nunjucks": "^2.3.0"
   },
   "devDependencies": {
-    "egg-bin": "^6.13.0"
+    "egg-bin": "^6.13.0",
+    "egg-mock": "^5.15.1"
   }
 }

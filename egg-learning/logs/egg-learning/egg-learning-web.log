@@ -1,30 +1,48 @@
-2025-01-10 20:28:26,764 ERROR 92618 [-/127.0.0.1/-/16ms GET /news] nodejs.TypeError: Cannot destructure property 'serverUrl' of 'this.config.news' as it is undefined.
-    at NewsService.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/service/news.js:5:13)
-    at NewsController.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js:7:45)
-    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/utils/index.js:44:21)
-    at Object.classControllerMiddleware (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
-    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/utils.js:12:21)
-    at wrappedController (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/egg_router.js:322:18)
-    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
-    at next (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:45:18)
-    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/router.js:186:18
-    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
+2025-01-12 11:36:19,016 ERROR 88671 [-/127.0.0.1/-/5018ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":6,"createSocketErrorCount":0,"closeSocketCount":6,"errorSocketCount":0,"timeoutSocketCount":5,"requestCount":6,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/hjp/learnNodeJs/egg-learning/node_modules/urllib/lib/urllib.js:988:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ConnectionTimeoutError"
+requestId: 7
+data: undefined
+path: "/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5012,"keepAliveSocket":false,"requestUrls":["https://hacker-news.firebaseio.com/v0/topstories.json"],"timing":null,"remoteAddress":"35.190.39.113","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 88671
+hostname: hongjiaengdeAir
 
-pid: 92618
-hostname: hongjiapengdeMacBook-Pro.local
+2025-01-12 11:36:43,958 ERROR 88671 [-/127.0.0.1/-/5011ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":7,"createSocketErrorCount":0,"closeSocketCount":7,"errorSocketCount":0,"timeoutSocketCount":5,"requestCount":6,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/hjp/learnNodeJs/egg-learning/node_modules/urllib/lib/urllib.js:988:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ConnectionTimeoutError"
+requestId: 8
+data: undefined
+path: "/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5007,"keepAliveSocket":false,"requestUrls":["https://hacker-news.firebaseio.com/v0/topstories.json"],"timing":null,"remoteAddress":"35.190.39.113","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 88671
+hostname: hongjiaengdeAir
 
-2025-01-10 20:47:18,563 ERROR 6173 [-/127.0.0.1/-/9ms GET /news] nodejs.TypeError: Cannot read property 'list' of undefined
-    at NewsController.list (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/app/controller/news.js:7:45)
-    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/utils/index.js:44:21)
-    at Object.classControllerMiddleware (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
-    at Object.callFn (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/utils.js:12:21)
-    at wrappedController (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/egg_router.js:322:18)
-    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
-    at next (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:45:18)
-    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/@eggjs/router/lib/router.js:186:18
-    at dispatch (/Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:44:32)
-    at /Users/hongjiapeng/Desktop/HJP/learnNodeJs/egg-learning/node_modules/koa-compose/index.js:36:12
-
-pid: 6173
-hostname: hongjiapengdeMacBook-Pro.local
+2025-01-12 11:36:58,838 ERROR 88731 [-/127.0.0.1/-/5026ms GET /news] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/hongjiapeng/Desktop/hjp/learnNodeJs/egg-learning/node_modules/urllib/lib/urllib.js:988:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v0/topstories.json?orderBy=%22%24key%22&startAt=%220%22&endAt=%224%22"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5017,"keepAliveSocket":false,"requestUrls":["https://hacker-news.firebaseio.com/v0/topstories.json"],"timing":null,"remoteAddress":"35.190.39.113","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 88731
+hostname: hongjiaengdeAir
 
