@@ -9,22 +9,21 @@ function toInt(str) {
   return parseInt(str, 10) || 0;
 }
 
-class UserController extends Controller {
+class DepartmentController extends Controller {
   async index() {
     const { ctx } = this
     const query = {
       limit: toInt(ctx.query.limit),
       offset: toInt(ctx.query.offset)
     }
-    console.log("ctx.model", ctx.model)
-    const allUsers = await ctx.model.Users.findAll(query)
-    sendResponse(ctx, allUsers, 'users found', 200)
+    const allDepartment = await ctx.model.Department.findAll(query)
+    sendResponse(ctx, allDepartment, 'Department found', 200)
   }
 
   async show() {
     const ctx = this.ctx;
     const { id } = ctx.params;
-    const user = await ctx.model.Users.findByPk(id);
+    const user = await ctx.model.Department.findByPk(id);
     if (!user) {
       sendResponse(ctx, null, 'user not found', 200)
     } else {
@@ -35,30 +34,30 @@ class UserController extends Controller {
   async create() {
     const ctx = this.ctx;
     const { name, age } = ctx.request.body;
-    const user = await ctx.model.Users.create({ name, age })
+    const user = await ctx.model.Department.create({ name, age })
     sendResponse(ctx, user, 'user created', 201)
   }
 
   async update() {
     const ctx = this.ctx;
     const { id } = ctx.params;
-    const user = await ctx.model.Users.findByPk(id);
+    const user = await ctx.model.Department.findByPk(id);
     if (!user) {
       sendResponse(ctx, null, 'user not found', 200)
       return
     }
-    const { name = user.name, age = user.age, department_id = user.department_id } = ctx.request.body;
-    await user.update({ name, age, department_id })
+    const { name, age } = ctx.request.body;
+    await user.update({ name, age })
     sendResponse(ctx, user, 'update user success', 200)
   }
 
   async destroy() {
     const ctx = this.ctx;
     const { id } = ctx.params;
-    const user = await ctx.model.Users.findByPk(id);
+    const user = await ctx.model.Department.findByPk(id);
     await user.destroy();
     sendResponse(ctx, null, 'user deleted', 204)
   }
 }
 
-module.exports = UserController
+module.exports = DepartmentController

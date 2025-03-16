@@ -20,6 +20,7 @@
   "devDependencies": {
     "egg-bin": "^6.13.0",
     "egg-mock": "^5.15.1",
+    "factory-girl": "^5.0.4",
     "sequelize-cli": "^6.6.2"
   }
 }

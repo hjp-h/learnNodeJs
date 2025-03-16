@@ -14,4 +14,6 @@ module.exports = app => {
   // PUT /api/users/:id 更新用户 对应controller.user.update
   // DELETE /api/users/:id 删除用户 对应controller.user.destroy
   router.resources('users', '/api/users', controller.user);
+
+  router.resources('department', '/api/department', controller.department);
 };
